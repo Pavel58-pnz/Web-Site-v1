@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Ubuntu, sans-serif;
+}
+body {
+    /* overflow-x: hidden; */
+    background: rgba(135, 135, 135, 0.816);
+    min-height: 100vh;
+}
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+    .log {
+        color: black;
+        font-weight: 700;
+        font-size: 2em;
+        text-decoration: none;
+    }
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+    .navigation li {
+        list-style: none;
+    }
+    .navigation li a {
+    text-decoration: none;
+    padding: 6px 15px;
+    color: black;
+    border-radius: 15px;
+    }
+    .navigation li a.active,
+    .navigation li a:hover {
+        background: black;
+        color: white;
+    }
+.parallax {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 180vh;
+    background-image: url(Images/City.png);
+}
+    .div-content-vds {
+        position: absolute;
+        top: 80px;
+        width: 900px;
+        height: 600px;
+        background-color: rgba(0, 0, 0, 0.9);
+        border-style: solid;
+        background-image: url(Images/Network.png);
+        border-radius: 50px;
+    
+    }
+    .div-content-vds button {
+        height: 50px;
+        width: 250px;
+        border-radius: 50px;
+    }
+    .div-content-vds button:hover {
+        background-color: black;
+        color: white;
+    }
+    .parallax img {
+        position: relative;
+        margin-bottom: 5%;
+    }
+    #m1 {
+        margin-left: -40%;
+        margin-top: 10%;
+    }
+    #text {
+        color: white;
+        margin: 3% 35% 0% 35%;
+    }
+.div-content-hosting {
+    height: 1100px;
+    width: 400px;
+    padding: 15px 25px;
+    border-radius: 30px;
+    margin-left: 1000px;
+    background-image: url(Images/Network.png);
+    background-color: black;
+    color: white;
+}
+    .div-content-hosting li {
+        margin-bottom: 10%;
+        list-style: none;
+    }
+.div-content-menu {
+    padding: 25px 25px;
+    background-color: white;
+}
+    .div-content-menu img {
+    }
+    .div-content-menu a {
+        text-decoration: none;
+    }
+.sec {
+    position: relative;
+    padding: 100px;
+    background: black;
+    color: white;
+}
+    .sec h2 {
+        font-size: 3em;
+        margin-bottom: 10px;
+    }
+    .sec p {
+        font-size: 1em;
+        font-weight: 300;
+    }
