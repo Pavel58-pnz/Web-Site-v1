@@ -55,7 +55,7 @@ header {
     background-image: url(Images/City.png);
 }
     .div-content-vds {
-        position: absolute;
+        position: fixed;
         top: 80px;
         width: 900px;
         height: 600px;
