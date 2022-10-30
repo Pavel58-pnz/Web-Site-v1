@@ -16,7 +16,6 @@ header {
     left: 0;
     width: 100%;
     padding: 25px 25px;
-    font-size: 2em;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -25,21 +24,21 @@ header {
     .log {
         color: black;
         font-weight: 700;
-        font-size: 2em;
+        font-size: 4em;
         text-decoration: none;
     }
 .navigation {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 100px;
+    gap: 25px;
 }
     .navigation li {
         list-style: none;
     }
     .navigation li a {
     text-decoration: none;
-    padding: 25px 75px;
+    padding: 15px 45px;
     color: black;
     border-radius: 100px;
     }
@@ -80,7 +79,7 @@ header {
         .parallax img {
             position: relative;
             width: 550px;
-            height: 450px;
+            height: 490px;
         }
         #text {
             color: white;
@@ -119,8 +118,8 @@ header {
     }
 }
 */
-/* Site PC-WQHD 
-@media only screen and (min-width: 2000px){
+/* Site PC-WQHD */
+@media only screen and (min-width: 2300px){
     header {
         position: absolute;
         top: 0;
@@ -135,7 +134,7 @@ header {
     .log {
         color: black;
         font-weight: 700;
-        font-size: 5em;
+        font-size: 4em;
         text-decoration: none;
     }
     .navigation {
@@ -143,7 +142,7 @@ header {
         justify-content: center;
         align-items: center;
         gap: 100px;
-        font-size: 5em;
+        font-size: 2em;
     }
     .parallax {
     position: relative;
@@ -154,4 +153,3 @@ header {
     background-size: cover;
 }
 }
-*/
