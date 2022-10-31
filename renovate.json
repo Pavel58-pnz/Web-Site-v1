@@ -10,17 +10,11 @@
     "group:recommended",
     "workarounds:all"
   ],
-  "packageRules": [
-    {
-      "updateTypes": [
-        "minor",
-        "patch"
-      ],
-      "automerge": true
-    }
-  ],
-  "timezone": "Europe/Moscow",
-  "schedule": [
-    "before 5am",
-  ]
+  "rangeStrategy": "pin",
+  "ignorePaths": ["examples/**"],
+  "packageRules": [{
+    "packagePatterns": ["^angular.*"],
+    "groupName": "angular",
+    "automerge": true
+  }],
 }
