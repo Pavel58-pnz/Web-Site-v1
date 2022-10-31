@@ -1,20 +1,12 @@
 {
   "extends": [
-    ":dependencyDashboard",
-    ":semanticPrefixFixDepsChoreOthers",
-    ":ignoreModulesAndTests",
-    ":autodetectPinVersions",
-    ":prHourlyLimit2",
-    ":prConcurrentLimit10",
-    "group:monorepos",
-    "group:recommended",
-    "workarounds:all"
+    "config:base"
   ],
-  "rangeStrategy": "pin",
-  "ignorePaths": ["examples/**"],
-  "packageRules": [{
-    "packagePatterns": ["^angular.*"],
-    "groupName": "angular",
-    "automerge": true
-  }],
+  "automerge": true,
+  "automergeType": "pr",
+  "timezone": "Europe/Moscow",
+  "schedule": [
+    "after 6pm every day",
+    "before 5am every day"
+  ]
 }
