@@ -1,7 +1,15 @@
 {
   "extends": [
-    "config:base"
-  ],
+    ":dependencyDashboard",
+    ":semanticPrefixFixDepsChoreOthers",
+    ":ignoreModulesAndTests",
+    ":autodetectPinVersions",
+    ":prHourlyLimit2",
+    ":prConcurrentLimit10",
+    "group:monorepos",
+    "group:recommended",
+    "workarounds:all"
+  ]
   "packageRules": [
     {
       "updateTypes": [
@@ -11,10 +19,8 @@
       "automerge": true
     }
   ],
-  "timezone": "Europe/Madrid",
+  "timezone": "Europe/Moscow",
   "schedule": [
-    "after 10pm every weekday",
-    "before 5am every weekday",
-    "every weekend"
+    "before 5am",
   ]
 }
