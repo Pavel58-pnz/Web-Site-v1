@@ -9,7 +9,7 @@
     "group:monorepos",
     "group:recommended",
     "workarounds:all"
-  ]
+  ],
   "packageRules": [
     {
       "updateTypes": [
